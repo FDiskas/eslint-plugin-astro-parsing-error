@@ -1,0 +1,17 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<article>
+  <h1 class="text-3xl">{title}</h1>
+  <p>Hello</p>
+  <input class="text-black dark:text-white"
+    /><!--
+Error Here
+  --><input type="radio" class="peer hidden" />
+  </label>
+</article>

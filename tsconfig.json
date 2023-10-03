@@ -1,0 +1,20 @@
+{
+  "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    "lib": ["DOM", "ESNext"],
+    "jsx": "preserve",
+    "skipLibCheck": true,
+    "allowJs": true,
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "allowImportingTsExtensions": true,
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@layouts/*": ["src/layouts/*"],
+      "@containers/*": ["src/containers/*"],
+      "@assets/*": ["src/assets/*"],
+      "@icons/*": ["src/icons/*"]
+    }
+  },
+  "exclude": ["*.mjs", "*.cjs"]
+}
